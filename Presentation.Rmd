@@ -1,0 +1,70 @@
+---
+title: "Cyclistic Membership Analysis"
+author: "Logan Monaco"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+\newpage
+
+## Business Objective:
+Increase the number of casual riders becoming members through new marketing initiatives.
+
+\newpage
+
+## Analysis Objective:
+Utilize bikeshare data from Q1 2019 and Q1 2020 to determine trends and patterns among casual and member users to develop a new marketing strategy.
+
+#### Data Source Citation:
+
+*Lyft Bikes and Scooters, LLC, Divvy Bikeshare, City of Chicago, "divvy-tripdata", Q1 2019, Q1 2020*
+
+\newpage
+
+## Analysis Overview:
+The analysis compared member and non-member data across various variables including ride length, number of rides and day of the week to determine underlying trends in the data.
+
+## Key Insights:
+  
+  * Members take significantly more rides than casual users.
+  * Casual riders have a much longer average ride duration.
+  * Members do most of their rides on weekdays while casual riders do their most riding on weekends.
+  
+\newpage
+
+```{r include=FALSE}
+library(knitr)
+```
+
+## Number of rides per weekday by membership status
+We can see that members have significantly more rides overall and the distribution of rides is heavier on weekends for casual riders and heavier on weekdays for members.
+
+
+![Number of Rides](number_of_rides.jpeg)
+
+
+\newpage
+
+## Average duration of ride by membership status and day of the week
+It is clear that casual riders overall have longer ride duration than members with a spike in duration on Thursdays. 
+
+![Average Ride Duration](average_duration.jpeg)
+
+\newpage
+
+## Conclusions
+  * Members use ride share as a work transportation method and therefore use it on weekdays and with a higher overall count.
+  * Casual riders use the service infrequently for leisure trips, particularly on weekends. 
+  * Rides linked to work tend to be shorter while leisure rides tend to last longer 
+
+## Recommendations
+  * Cyclistic should consider marketing new features to it's membership service that target the behaviors of casual riders. 
+  * I recommend features that reward weekend usage of bikes for members as well as a system of point earnings that accumulate proportionally to the length of trip taken using the Cyclistic system. 
+  * Casual members need a reason to purchase membership despite infrequent usage of the system. If membership is tailored to reward the behaviors of casual riders to give them a financial reason to justify the purchase, they may reconsider.
+  
+\newpage
+
+# Thank you for your time and consideration.
+
+### Are there any questions I can answer for you?
+
